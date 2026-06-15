@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --------------------- */
+/*       CABEÇALHO       */
+/* --------------------- */
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: radial-gradient(circle at center, black, #260101);
+}
+
+header nav#nav-esq {
+    width: 100%;
+    height: 150px;
+    background-color: rgba(255, 0, 0, 0);
+
+    display: flex;
+    flex-flow: row;
+    align-items: center; 
+}
+
+header nav#nav-esq div#logo {
+    width: 100px;
+    height: 120px;
+    margin-left: 5rem;
+}
+
+header nav#nav-esq div#logo img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* ---------------- */
+/*       MENU       */
+/* ---------------- */
+
+header nav#nav-esq ul#icone-menu {
+    display: none;
+}
+
+header nav#nav-esq ul#icone-menu li{
+    list-style: none;
+}
+
+header nav#nav-esq ul#icone-menu ion-icon {
+    font-size: 50px;
+    color: #FFF;
+    margin-right: 2rem;
+}
+
+header nav#nav-esq ul#menu-principal {
+    margin-left: 5rem;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+    header nav#nav-esq ul#menu-principal li{
+        list-style: none;
+        margin-right: 2rem;
+}
+
+    header nav#nav-esq ul#menu-principal li a {
+        text-decoration: none;
+        color: #FFF;
+        font-size: 120%;
+        text-shadow: 4px 6px 10px #000;
+        padding-bottom: 10px;
+        transition: .3s ease-out;
+        margin: 30px;
+}
+
+header nav#nav-esq ul#menu-principal li a:hover {
+    border-bottom: 1px solid #FFF;
+    opacity: 0.6;
+}
+
+/* --------------------------- */
+/*       TEXTO PRINCIPAL       */
+/* --------------------------- */
+
+main {
+    width: 100%;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
+    align-items: center; 
+    padding: 5rem 2rem 2rem 2rem; 
+    box-sizing: border-box;
+    background: radial-gradient(circle at center, black, #260101);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+ .container-fotos2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 60px; 
+}
+
+.titulo-secao2 {
+    color: #FFF;
+    margin-bottom: 10%;
+    font-size: 200%;
+    text-align: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px; 
+}
+
+.galeria img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover; 
+    transition: all 0.2s linear;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+/* --------------------------- */
+/*           RODAPÉ            */
+/* --------------------------- */
+
+#container-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px 0;
+    
+}
+.rodape {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: #FFF;
+    font-size: 100%;
+}
+
+.rodape-textos  {
+    color: #FFF;
+    margin: 0;
+    line-height: 1.6;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
